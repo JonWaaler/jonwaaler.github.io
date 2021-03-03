@@ -90,15 +90,16 @@ header nav ul li a {
 .aboutme {
   display: flex;
   background-color: var(--background2-color);
-  padding: 30px 55px;
+  padding: 30px 30px;
 }
 
 .aboutme div h2 {
   color: var(--textColor1);
   width: 100px;
   text-align: right;
-  padding: 15px;
-  padding-bottom: 185px;
+  padding: 10px;
+  padding-bottom: 190px;
+  margin-left: 25px;
   border-right: 5px solid var(--background-color);
 }
 
@@ -110,7 +111,50 @@ header nav ul li a {
 .aboutme div p {
   color: var(--textColor1);
   padding: 30px;
-  margin-top: auto;
-  margin-bottom: auto;
+  height: 256px;
+  margin: auto;
 }
+
+/* NEWS PAPER STYLE PARAGRAPHS
+.aboutme div p::first-letter {
+  float: left;
+  font-weight: bold;
+  font-size: 5.5rem;
+  line-height: 4rem;
+  height: 4rem;
+  text-transform: uppercase;
+}*/
 /* END ABOUT ME */
+
+/* MY WORK */
+.mywork {
+  background-color: var(--color);
+  padding: 30px 30px;
+  display: flex;
+}
+
+.mywork div h2 {
+  color: var(--textColor1);
+  width: 100px;
+  text-align: right;
+  padding: 10px;
+  padding-bottom: 86vmax;
+  margin-left: 25px;
+  border-right: 5px solid var(--background-color);
+}
+
+.container {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.mywork div img {
+  width: 40vmax;
+  padding: 5px 10px;
+}
+
+.container div:first-child img {
+  width: 80vmax;
+}
+/* END MY WORK */
