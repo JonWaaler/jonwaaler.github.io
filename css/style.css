@@ -32,6 +32,14 @@ Using this to keep track of colour palette
   z-index: -2;
 }
 
+.title-styling1 {
+  position: absolute;
+  left: 70;
+  animation: skew-title2 3s infinite;
+  color: rgb(0, 0, 0);
+  z-index: -3;
+}
+
 /* TITLE ANIMATIONS*/
 @keyframes skew-title1 {
   0% {
@@ -161,7 +169,7 @@ header nav ul li a:hover {
 
 .aboutme div h2 {
   color: var(--textColor2);
-  width: 100px;
+  width: 110px;
   text-align: right;
   padding: 10px;
   margin-left: 25px;
@@ -176,18 +184,8 @@ header nav ul li a:hover {
   color: var(--textColor2);
   padding: 30px;
   height: 256px;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
-
-/* NEWS PAPER STYLE PARAGRAPHS
-.aboutme div p::first-letter {
-  float: left;
-  font-weight: bold;
-  font-size: 5.5rem;
-  line-height: 4rem;
-  height: 4rem;
-  text-transform: uppercase;
-}*/
 /* END ABOUT ME */
 
 /* MY WORK */
@@ -200,7 +198,7 @@ header nav ul li a:hover {
 
 .mywork div h2 {
   color: var(--textColor2);
-  width: 100px;
+  width: 110px;
   text-align: right;
   padding: 10px;
   margin-left: 25px;
@@ -211,6 +209,10 @@ header nav ul li a:hover {
   align-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
+}
+.container-projects div a {
+  height: 10px;
+  background-color: rgb(255, 0, 0);
 }
 
 .mywork div img {
@@ -223,6 +225,21 @@ header nav ul li a:hover {
   border: rgb(107, 166, 255) 5px solid;
   filter: none;
   background-blend-mode: multiply;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 70%;
+}
+.contact-content a {
+  margin: auto 12px;
+  padding: 2px 1px;
+  text-align: center;
+  text-decoration: none;
+  border-bottom: solid black 3px;
+  font-size: 1.5rem;
 }
 
 /* END MY WORK */
@@ -320,5 +337,14 @@ header nav ul li a:hover {
 
   .mywork div img {
     width: 100%;
+  }
+
+  .contact-content a {
+    margin: auto 12px;
+    padding: 2px 1px;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: solid black 3px;
+    font-size: 1rem;
   }
 }
