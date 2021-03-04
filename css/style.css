@@ -23,6 +23,39 @@ Using this to keep track of colour palette
   */
 }
 
+.title-styling {
+  position: absolute;
+  left: 70;
+  animation: skew-title1 3s infinite;
+  color: rgb(71, 59, 134);
+  transition: 5s;
+  z-index: -2;
+}
+
+/* TITLE ANIMATIONS*/
+@keyframes skew-title1 {
+  0% {
+    transform: skew(0deg, -5deg);
+  }
+  50% {
+    transform: skew(0deg, 5deg);
+  }
+  100% {
+    transform: skew(0deg, -5deg);
+  }
+}
+@keyframes skew-title2 {
+  0% {
+    transform: skew(0deg, -10deg);
+  }
+  50% {
+    transform: skew(0deg, 10deg);
+  }
+  100% {
+    transform: skew(0deg, -10deg);
+  }
+}
+
 /* give the document a blue background,
 give the background behind the header a colour*/
 body {
@@ -63,31 +96,30 @@ header a {
 
 header nav {
   float: right;
-  margin: 7px 0;
 }
 
 header nav ul li {
-  display: inline;
-  padding: 10px;
+  display: inline-flex;
+  padding: 5px;
+  margin: 5px;
 }
 
 header nav ul li a {
-  margin: 0 10px;
   font-weight: lighter;
   font-size: 22px;
   transition: 0.3s;
 }
 
 header nav ul li a:hover {
-  margin: 0 10px;
   font-weight: normal;
   background-color: rgb(0, 110, 255);
   border-radius: 10px;
+  font-size: 25px;
 }
 /*END HEADER*/
 
 /*JUMBOTRON*/
-.jumbotron {
+.jumbotron-blur {
   background-image: url("/images/BestSunset.jpg");
   background-color: rgb(38, 0, 255);
   background-blend-mode: saturation;
@@ -97,14 +129,21 @@ header nav ul li a:hover {
   width: 100%;
   background-size: cover;
   display: inline-flex;
+  filter: blur(3px);
 }
 
-.jumbotron h2 {
+.jumbotron-text {
+  background-color: rgba(255, 255, 255, 0.24);
+  border: rgb(255, 255, 255) 2px solid;
+  border-radius: 10px;
   color: var(--textColor1);
   padding: 8px;
-  font-size: 3vw;
-  height: 8vh;
-  margin: 9% auto 0 auto;
+  font-size: 18px;
+  height: auto;
+  position: absolute;
+  top: 350px;
+  right: 50px;
+  text-align: center;
 }
 /*END JUMBOTRON*/
 
@@ -163,7 +202,7 @@ header nav ul li a:hover {
   color: var(--textColor2);
   width: 100px;
   text-align: right;
-
+  padding: 10px;
   margin-left: 25px;
 }
 
@@ -171,15 +210,19 @@ header nav ul li a:hover {
   display: flex;
   align-content: space-around;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
 .mywork div img {
   width: 30vw;
-  transition: 0.5s;
+  transition: 0.3s;
+  filter: sepia();
 }
 
 .mywork div img:hover {
-  border: rgb(255, 252, 104) 5px solid;
+  border: rgb(107, 166, 255) 5px solid;
+  filter: none;
+  background-blend-mode: multiply;
 }
 
 /* END MY WORK */
@@ -218,7 +261,52 @@ header nav ul li a:hover {
     border-right: 2px solid var(--background1-color);
   }
 
+  .jumbotron-text {
+    padding: 8px;
+    font-size: 12px;
+    height: auto;
+    position: absolute;
+    width: 259px;
+    top: 350px;
+    right: 10px;
+  }
+
+  /* ABOUT ME */
+  .aboutme {
+    background-color: var(--background2-color);
+    padding: 30px 15px;
+    display: flex;
+    background-color: var(--background2-color);
+  }
+
+  .about-me-container {
+    display: flex;
+  }
+
+  .aboutme div h2 {
+    color: var(--textColor2);
+    width: 70px;
+    text-align: right;
+    padding: 10px;
+    margin-left: 15px;
+    font-size: 1rem;
+  }
+
+  .aboutme div img {
+    height: 30vw;
+    padding: 5px;
+  }
+
+  .aboutme div p {
+    color: var(--textColor2);
+    padding: 5px;
+    height: 256px;
+    font-size: 0.75rem;
+  }
+
+  /*MY WORK*/
   .mywork {
+    padding: 30px 15px;
   }
 
   .mywork div h2 {
@@ -228,7 +316,6 @@ header nav ul li a:hover {
 
     margin-left: 15px;
     font-size: 1rem;
-    margin-right: 5px;
   }
 
   .mywork div img {
