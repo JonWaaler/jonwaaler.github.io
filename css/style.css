@@ -75,6 +75,14 @@ header nav ul li a {
   margin: 0 10px;
   font-weight: lighter;
   font-size: 22px;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  margin: 0 10px;
+  font-weight: normal;
+  background-color: rgb(0, 110, 255);
+  border-radius: 10px;
 }
 /*END HEADER*/
 
@@ -155,7 +163,7 @@ header nav ul li a {
   color: var(--textColor2);
   width: 100px;
   text-align: right;
-  padding: 10px;
+
   margin-left: 25px;
 }
 
@@ -167,10 +175,11 @@ header nav ul li a {
 
 .mywork div img {
   width: 30vw;
+  transition: 0.5s;
 }
 
 .mywork div img:hover {
-  box-shadow: inset 0px 0px 0px 10px rgba(251, 255, 0, 0.842);
+  border: rgb(255, 252, 104) 5px solid;
 }
 
 /* END MY WORK */
@@ -189,7 +198,6 @@ header nav ul li a {
 
   .mywork div img {
     width: 100%;
-    padding: 5px 10px;
   }
 }
 
@@ -201,7 +209,6 @@ header nav ul li a {
 
   .mywork div img {
     width: 100%;
-    padding: 5px 10px;
   }
 }
 
@@ -212,15 +219,13 @@ header nav ul li a {
   }
 
   .mywork {
-    padding: 15px;
   }
 
   .mywork div h2 {
     color: var(--textColor2);
     width: 70px;
     text-align: right;
-    padding-left: 0;
-    padding-right: 10px;
+
     margin-left: 15px;
     font-size: 1rem;
     margin-right: 5px;
@@ -228,6 +233,5 @@ header nav ul li a {
 
   .mywork div img {
     width: 100%;
-    padding: 5px 10px;
   }
 }
