@@ -414,4 +414,9 @@ header nav ul li a:hover {
     position: absolute;
     right: 10px;
   }
+
+  .aboutme div h2 {
+    padding: 10px 0px;
+    padding-right: 10px;
+  }
 }
