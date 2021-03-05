@@ -85,7 +85,7 @@ header {
   top: 0;
   padding: 10px 0px;
   background-color: var(--background1-color);
-  z-index: 1;
+  z-index: 999;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -96,20 +96,22 @@ header h1 {
   padding-left: 70px;
   display: inline-flex;
 }
+
 header a {
   text-decoration: none;
   color: var(--textColor1);
   padding: 5px;
 }
 
-header nav {
-  float: right;
+header nav ul {
+  display: none;
 }
 
 header nav ul li {
-  display: inline-flex;
   padding: 5px;
   margin: 5px;
+  list-style: none;
+  display: flex;
 }
 
 header nav ul li a {
@@ -215,6 +217,20 @@ header nav ul li a:hover {
   background-color: rgb(255, 0, 0);
 }
 
+.container-projects div div {
+  z-index: 1;
+  background-color: cornflowerblue;
+  color: var(--textColor1);
+  padding: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  transform: translateY(-130px);
+}
+.container-projects div div h4 {
+  display: inline-flex;
+}
+
 .mywork div img {
   width: 30vw;
   transition: 0.3s;
@@ -242,12 +258,23 @@ header nav ul li a:hover {
   font-size: 1.5rem;
 }
 
+/* MOBILE BUTTON SHOW/HIDE NAV ELEMENTS */
+/* display: none (hides element) */
+/* display: inline || block || inline-flex... (shows element) */
+.show {
+  display: block;
+}
+
 /* END MY WORK */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (min-width: 981px) {
   .container-projects div:first-child img {
     width: 60vmax;
+  }
+
+  .aboutme div p {
+    font-size: 1.5rem;
   }
 }
 
@@ -257,7 +284,7 @@ header nav ul li a:hover {
   }
 
   .mywork div img {
-    width: 100%;
+    width: 60vw;
   }
 }
 
@@ -346,5 +373,45 @@ header nav ul li a:hover {
     text-decoration: none;
     border-bottom: solid black 3px;
     font-size: 1rem;
+  }
+}
+
+/* hides the menu button*/
+@media screen and (min-width: 450px) {
+  header button {
+    display: none;
+  }
+
+  header nav ul {
+    display: inline-flex;
+  }
+}
+
+/* Tweaks for smaller screens (adds menu aswell) */
+@media screen and (max-width: 450px) {
+  .container-projects div a div {
+    font-size: 0.65rem;
+    transform: translateY(-80px);
+  }
+
+  header h1 {
+    padding-left: 35px;
+  }
+
+  header nav ul li {
+    display: inline-block;
+  }
+
+  header button {
+    margin: 10px 10px;
+    display: block;
+    padding: 3px 10px;
+    background-color: rgba(0, 0, 0, 0.26);
+    border: white 1px solid;
+    color: white;
+    border-radius: 5px;
+    font-size: 22px;
+    position: absolute;
+    right: 10px;
   }
 }
