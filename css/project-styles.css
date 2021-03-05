@@ -1,0 +1,106 @@
+/* CSS Global Variables 
+Using this to keep track of colour palette
+*/
+:root {
+  --background1-color: #2033ff;
+  --background2-color: #e5e6f1;
+  --textColor1: #ffffff;
+  --textColor2: #000000;
+  /* 
+    USE:
+      .jumbotron {
+          background-color: var(--background-color);
+      }
+    */
+}
+
+section {
+  background-color: var(--background2-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.project-panel {
+  background-color: var(--background2-color);
+  width: 60%;
+  margin: 20px auto;
+  border: var(--background1-color) 3px solid;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+}
+
+iframe {
+  /*
+  width: 560px;
+  height: 315px;
+*/
+  width: 48vw;
+  height: 30vw;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.project-panel div {
+  text-align: center;
+  margin: 8% 18%;
+  margin-top: 10px;
+}
+
+.project-panel div h3 {
+  color: var(--textColor2);
+  width: 240px;
+  margin: 0 auto;
+  font-size: 1.43rem;
+  padding: 5px 10px;
+  border-bottom: 3px solid var(--background1-color);
+}
+
+.project-panel div p {
+  color: var(--textColor2);
+  font-size: 1rem;
+}
+
+.project-panel div h4 {
+  color: var(--textColor2);
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+@media screen and (max-width: 450px) {
+  .project-panel {
+    background-color: var(--background2-color);
+    width: 90%;
+  }
+
+  .project-panel div h3 {
+    color: var(--textColor2);
+    width: 200px;
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-bottom: 3px solid var(--background1-color);
+  }
+
+  .project-panel div p {
+    font-size: 14px;
+  }
+
+  iframe {
+    /*
+    width: 560px;
+    height: 315px;
+  */
+    width: 80vw;
+    height: 48vw;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .project-panel div div {
+    margin: 10px auto;
+  }
+}
