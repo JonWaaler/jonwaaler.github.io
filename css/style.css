@@ -385,6 +385,10 @@ header nav ul li a:hover {
   header nav ul {
     display: inline-flex;
   }
+
+  .show {
+    display: inline-flex;
+  }
 }
 
 /* Tweaks for smaller screens (adds menu aswell) */

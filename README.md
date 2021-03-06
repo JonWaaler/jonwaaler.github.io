@@ -10,12 +10,13 @@ To round up some of the many projects I have done over the last 5+ years.
 - [JQuery](https://api.jquery.com/toggleclass/)
 - [How to make JQuery Button](https://jsfiddle.net/1fg4qkx5/2/)
 - [Position: Absolute; Refresher](https://stackoverflow.com/questions/8708945/how-to-position-text-over-an-image-in-css)
+- [PDF.js examples](https://mozilla.github.io/pdf.js/examples/)
 
 ## Built With
 
 - HTML
 - CSS
-- JQuery/Javascript
+- JQuery/PDF.js/Javascript
 
 ## Website
 
