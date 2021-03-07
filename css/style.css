@@ -267,6 +267,14 @@ header nav ul li a:hover {
 
 /* END MY WORK */
 
+/* RESUME PDF*/
+#the-canvas {
+  border: 1px solid black;
+  direction: ltr;
+  width: 100%;
+  height: 650px;
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (min-width: 981px) {
   .container-projects div:first-child img {
