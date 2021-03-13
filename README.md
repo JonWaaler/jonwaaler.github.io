@@ -22,9 +22,7 @@ To round up some of the many projects I have done over the last 5+ years.
 
 https://jonwaaler.github.io/
 
-### Screenshot of website
-
-### Planning Work
+## Web Design Sketch
 
 This plan was inspired by UofT Bootcamp example.
 ![Alt text](https://github.com/JonWaaler/jonwaaler.github.io/blob/main/images/Portfolio%20Design%20Doc.svg)
