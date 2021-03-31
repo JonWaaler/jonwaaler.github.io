@@ -12,7 +12,7 @@ Using this to keep track of colour palette
 */
 :root {
   --background1-color: #2d5dfc;
-  --background2-color: #e5e6f1;
+  --background2-color: #eeeff5;
   --textColor1: #ffffff;
   --textColor2: #000000;
   /* 
@@ -23,51 +23,17 @@ Using this to keep track of colour palette
   */
 }
 
-.title-styling {
-  position: absolute;
-  left: 70;
-  animation: skew-title1 3s infinite;
-  color: rgb(71, 59, 134);
-  transition: 5s;
-  z-index: -2;
-}
-
-.title-styling1 {
-  position: absolute;
-  left: 70;
-  animation: skew-title2 3s infinite;
-  color: rgb(0, 0, 0);
-  z-index: -3;
-}
-
-/* TITLE ANIMATIONS*/
-@keyframes skew-title1 {
-  0% {
-    transform: skew(0deg, -5deg);
-  }
-  50% {
-    transform: skew(0deg, 5deg);
-  }
-  100% {
-    transform: skew(0deg, -5deg);
-  }
-}
-@keyframes skew-title2 {
-  0% {
-    transform: skew(0deg, -10deg);
-  }
-  50% {
-    transform: skew(0deg, 10deg);
-  }
-  100% {
-    transform: skew(0deg, -10deg);
-  }
-}
-
 /* give the document a blue background,
 give the background behind the header a colour*/
 body {
-  background-color: var(--background1-color);
+  background-color: var(--background2-color);
+}
+
+code {
+  border-radius: 5px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  padding: 2px;
 }
 
 /* Used to give each section a border to separate
@@ -86,8 +52,6 @@ header {
   padding: 10px 0px;
   background-color: var(--background1-color);
   z-index: 999;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 header h1 {
@@ -126,25 +90,35 @@ header nav ul li a:hover {
   border-radius: 10px;
   font-size: 25px;
 }
+
+header button {
+  margin: 10px 10px;
+  display: block;
+  padding: 3px 10px;
+  background-color: rgba(0, 0, 0, 0.26);
+  border: white 1px solid;
+  color: white;
+  border-radius: 5px;
+  font-size: 22px;
+  position: absolute;
+  right: 10px;
+}
 /*END HEADER*/
 
 /*JUMBOTRON*/
 .jumbotron-blur {
-  background-image: url("/images/BestSunset.jpg");
-  background-color: rgb(38, 0, 255);
-  background-blend-mode: saturation;
+  background-image: url("/images/PortfolioBG.png");
   transform: skew(60deg, -30 deg) scaleY(0.6667);
   background-position: 50%;
   height: 400px;
   width: 100%;
   background-size: cover;
   display: inline-flex;
-  filter: blur(3px);
 }
 
 .jumbotron-text {
-  background-color: rgba(255, 255, 255, 0.24);
-  border: rgb(255, 255, 255) 2px solid;
+  background-color: var(--background1-color);
+  border: rgb(77, 160, 255) 2px solid;
   border-radius: 10px;
   color: var(--textColor1);
   padding: 8px;
@@ -180,6 +154,7 @@ header nav ul li a:hover {
 .aboutme div img {
   height: 30vw;
   padding: 20px;
+  max-height: 255px;
 }
 
 .aboutme div p {
@@ -385,7 +360,8 @@ header nav ul li a:hover {
 }
 
 /* hides the menu button*/
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 814px) {
+  /* display:none hides the nav button toggle */
   header button {
     display: none;
   }
