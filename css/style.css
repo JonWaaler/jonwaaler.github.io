@@ -15,12 +15,6 @@ Using this to keep track of colour palette
   --background2-color: #eeeff5;
   --textColor1: #ffffff;
   --textColor2: #000000;
-  /* 
-  USE:
-    .jumbotron {
-        background-color: var(--background-color);
-    }
-  */
 }
 
 /* give the document a blue background,
