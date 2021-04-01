@@ -154,7 +154,7 @@ header button {
 .aboutme div img {
   height: 30vw;
   padding: 20px;
-  max-height: 255px;
+  max-height: 350px;
 }
 
 .aboutme div p {
@@ -256,7 +256,7 @@ header button {
   }
 
   .aboutme div p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -278,6 +278,12 @@ header button {
 
   .mywork div img {
     width: 100%;
+  }
+  .aboutme div p {
+    color: var(--textColor2);
+    padding: 5px;
+    height: 256px;
+    font-size: 0.85rem;
   }
 }
 
