@@ -9,8 +9,8 @@
 
     <!-- helps with seo to give indexers a description of the page -->
     <meta
-      name="desc"
-      content="Horiseon is a company that professionally deals with: search engine optimization, Online Reputation Management and Social Media Marketing."
+      name="description"
+      content="Jon Waaler's portfolio website seeks to show off projects that Jon has created."
     />
 
     <!-- LINKEDIN META DATA FOR PREVIEWS-->
@@ -36,15 +36,6 @@
     <!-- Link to CSS stylesheet-->
     <link rel="stylesheet" href="./css/style.css" />
 
-    <!-- LINK JQUERY FOR BUTTON-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="java/javascript.js"></script>
-
-      <!-- LINK JQUERY FOR BUTTON-->
-          <!-- LINK JQUERY FOR BUTTON-->
-    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.6.347/build/pdf.min.js"></script>
-      <script src="java/pdf-viewer.js"></script>
-
     <!-- icon -->
     <link rel="shortcut icon" href="./images/PorfolioIconv2.ico" type="image/x-icon">
 
@@ -62,16 +53,16 @@
       <nav>
         <ul id="navigation">
           <li><a href="https://jonwaaler.github.io/#about-me">About Me</a></li>
-          <li><a href="https://jonwaaler.github.io/#my-work">My Work</a></lid=>
+          <li><a href="https://jonwaaler.github.io/#my-work">My Work</a></li>
           <li><a href="https://jonwaaler.github.io/#contact-me">Contact Me</a></li>
-          <li><a href="https://jonwaaler.github.io/web/viewer.html?file=Jon%20Waaler%20-%20Resume%20V4.pdf" target="_blank">Resume</a></li>
+          <li><a href="https://jonwaaler.github.io/web/viewer.html?file=Jon%20Waaler%20-%20Resume%20V4.pdf" rel="noopener" target="_blank">Resume</a></li>
         </ul>
       </nav>
     </header>
     <!-- END HEADER -->
 
     <!-- JUMBOTRON -->
-    <section></section>
+    <section>
       <div
         aria-label="Large landing page image of a beautiful sunset."
         class="jumbotron-blur"
@@ -96,9 +87,9 @@
             <p>
               Passionate programmer with 5+ years of experience in <code style="font-family: 'Courier New',
                Courier, monospace; font-weight: 500;">(C# && C++)</code>. Began web development in 2021 at 
-               <a href="https://bootcamp.learn.utoronto.ca/coding/" target="_blank">University of
+               <a href="https://bootcamp.learn.utoronto.ca/coding/" rel="noopener" target="_blank">University of
                Toronto's Coding Bootcamp</a>. I have significant experience working in groups and collaborating 
-               with teams on <a href="https://github.com/JonWaaler?tab=repositories" target="_blank">GitHub</a>.
+               with teams on <a href="https://github.com/JonWaaler?tab=repositories" rel="noopener" target="_blank">GitHub</a>.
                What gets me excited about coding is: trying to replicate something that I already enjoy, creating 
                challenging projects without fear of failure (that’s how we continuously improve) and lastly, 
                making something out of those random thoughts (what if there was something that did this...!).
@@ -116,50 +107,57 @@
         <div class="container-projects">
           <div>
             <a href="./zombies.html">
-              <img src="./gifs/COD_Zombies_Gameplay_Fan_Game.gif" alt="" />
+              <!-- Video format that fallsback to an image-->
+              <video src="./videos/CODZombiesGameplay.mp4" poster="./images/CodZombiesCover.PNG" autoplay loop muted playsinline>
+              </video>
               <!-- Image Descriptor-->
               <div>
                 <h4>COD Zombies</h4>
                 <p>Unity3D, C#</p>
               </div>
             </a>
-          </div>
-          <div>
+        </div>
+        <div>
             <a href="./bloodreign.html"> 
-              <img src="./gifs/BloodReign_-_First_Look_Gameplay.gif" alt="" />
+              <video src="./videos/BloodReignGamepley.mp4" poster="./images/BloodReignCover.PNG" autoplay loop muted playsinline>
+              </video>
               <!-- Image Descriptor-->
               <div>
                 <h4>BloodReign</h4>
                 <p>Unity3D, C#</p>
               </div>
             </a>
-          </div>
-          <div>
+        </div>
+        <div>
             <a href="./neuralnet.html"> 
-              <img src="./gifs/Neural_Network_Unity3D.gif" alt="" />
+              <video src="./videos/NeuralNet.mp4" poster="./images/NeuralNetworkCover.PNG" autoplay loop muted playsinline>
+
+              </video>
               <!-- Image Descriptor-->
               <div>
                 <h4>Neural Network</h4>
                 <p>Unity3D, C#</p>
               </div>
             </a>
-          </div>
-          <div>
+        </div>
+        <div>
             <a href="./rogue-like.html">
-              <img src="./gifs/Enter_the_Underworld_Gameplay_Update.gif" alt="" />
+              <video src="./videos/ETG_Gameplay.mp4" poster="./images/ETGCover.PNG" autoplay loop muted playsinline>
+
+              </video>
               <!-- Image Descriptor-->
               <div>
                 <h4>Rogue Like Game</h4>
                 <p>Unity3D, C#</p>
               </div>
             </a>
-          </div>
+        </div>
           
         <!-- Google play apps-->
         <!-- Jumpy Shroom-->
         <div>
           <a href="https://play.google.com/store/apps/details?id=com.JonWaalerApps.TiltedTowers">
-            <img src="./images/JumpyShroomCover.png" alt="" />
+            <img src="./images/JumpyShroomCover.png" alt="" srcset="">
             <!-- Image Descriptor-->
             <div>
               <h4>Jumpy Shroom</h4>
@@ -169,39 +167,16 @@
         </div>
         <div>
           <a href="https://play.google.com/store/apps/details?id=com.Company.SandwichSimulator&hl=en&gl=US">
-            <img src="./gifs/Sandwich_Simulator_MobileVR.gif" alt="" />
-            <!-- Image Descriptor-->
-            <div>
-              <h4>Jumpy Shroom</h4>
-              <p>Unity3D, C#, Play Store</p>
-            </div>
-          </a>
-        </div>
-        <div>
-          <a href="https://play.google.com/store/apps/details?id=com.Company.HopTheDot&hl=en&gl=US">
-            <img src="./images/HopTheDot.png" alt="" />
-            <!-- Image Descriptor-->
-            <div>
-              <h4>Jumpy Shroom</h4>
-              <p>Unity3D, C#, Play Store</p>
-            </div>
-          </a>
-        </div>
+            <video src="./videos/SandwichSim.mp4" poster="./images/SandwichSimCover.PNG" autoplay loop muted playsinline>
 
-        <!--
-        <div>
-          <a href="https://jonwaaler.github.io/run-buddy/">
-            <img src="./images/run-buddy-picture.PNG" alt="" />
-            
+            </video>
+            <!-- Image Descriptor-->
             <div>
-              <h4>Website - RunBuddy</h4>
-              <p>html, css</p>
+              <h4>Sandwich Simulator</h4>
+              <p>Unity3D, C#, Play Store</p>
             </div>
           </a>
-        </div> 
         </div>
-        -->
-        
       </section>
         <!--END MY WORK-->
 
@@ -216,12 +191,20 @@
         <div class="contact-content">
           <a href="tel:416-912-7235">(416) - 912 - 7235</a>
           <a href="mailto:JonWaaler@outlook.com">JonWaaler@outlook.com</a>
-          <a href="https://github.com/JonWaaler?tab=repositories" target="_blank">GitHub</a>
-          <a href="https://www.linkedin.com/in/jon-waaler-0076a7158/" target="_blank">Linkedin</a>
+          <a href="https://github.com/JonWaaler?tab=repositories" rel="noopener" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/jon-waaler-0076a7158/" rel="noopener" target="_blank">Linkedin</a>
         </div>
       </footer>
       <!-- END FOOTER-->
     </main>
     <!-- END MAIN -->
+
+        <!-- CDN JQUERY-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="java/javascript.js"></script>
+
+        <!-- CDN REACT.JS-->
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
   </body>
 </html>

@@ -101,7 +101,9 @@ header button {
 
 /*JUMBOTRON*/
 .jumbotron-blur {
-  background-image: url("/images/PortfolioBG.png");
+  background-color: var(--background1-color);
+  background-image: url("/images/PortfolioBG.webp"),
+    url("/images/PortfolioBG.png");
   transform: skew(60deg, -30 deg) scaleY(0.6667);
   background-position: 50%;
   height: 400px;
@@ -199,12 +201,16 @@ header button {
   display: inline-flex;
 }
 
+.mywork div video,
 .mywork div img {
+  /*width: 30vw;*/
   width: 30vw;
+  object-fit: cover;
   transition: 0.3s;
-  filter: sepia();
+  filter: sepia(1);
 }
 
+.mywork div video:hover,
 .mywork div img:hover {
   border: rgb(107, 166, 255) 5px solid;
   filter: none;
@@ -245,6 +251,7 @@ header button {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (min-width: 981px) {
+  .container-projects div:first-child video,
   .container-projects div:first-child img {
     width: 60vmax;
   }
@@ -259,6 +266,7 @@ header button {
     border-right: 4px solid var(--background1-color);
   }
 
+  .mywork div video,
   .mywork div img {
     width: 60vw;
   }
@@ -270,6 +278,7 @@ header button {
     border-right: 3.5px solid var(--background1-color);
   }
 
+  .mywork div video,
   .mywork div img {
     width: 100%;
   }
@@ -344,7 +353,8 @@ header button {
     font-size: 1rem;
   }
 
-  .mywork div img {
+  .mywork div video,
+  .mywork div video {
     width: 100%;
   }
 
