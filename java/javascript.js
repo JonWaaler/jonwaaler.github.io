@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("#navigation").toggleClass("show");
   });
 
-  function toggletMyWork(showGames) {
+  function toggleMyWork(showGames) {
     // Add/Remove show-projects class to the specified container
     $(".container-projects").first().toggleClass("show-projects", showGames);
     $(".container-projects").last().toggleClass("show-projects", !showGames);
@@ -12,15 +12,16 @@ $(document).ready(function () {
     $("#show-games").toggleClass("btn-active", showGames);
     $("#show-websites").toggleClass("btn-active", !showGames);
   }
-  toggletMyWork(true);
+
+  toggleMyWork(true);
 
   $("#show-games").on("click", function () {
     console.log("GAMES");
-    toggletMyWork(true);
+    toggleMyWork(true);
   });
 
   $("#show-websites").click(function () {
     console.log("WEBSITES");
-    toggletMyWork(false);
+    toggleMyWork(false);
   });
 });
