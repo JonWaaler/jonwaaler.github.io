@@ -2,7 +2,7 @@
 
 ## Purpose
 
-To round up some of the many projects I have done over the last 5+ years.
+To round up some of the many projects I have done since ~2016. This includes game development projects and now web development projects.
 
 ## Resources
 
@@ -24,7 +24,7 @@ https://jonwaaler.github.io/
 
 ## Web Preview
 
-![Alt text](https://i.imgur.com/zPiM0W0.png)
+![Alt text](https://raw.githubusercontent.com/JonWaaler/jonwaaler.github.io/main/images/OpenGraph-Preview.png)
 
 
 ## Web Design Sketch
@@ -34,4 +34,4 @@ This plan was inspired by UofT Bootcamp example.
 
 ## Contribution
 
-Made with ❤️ by Jon Waaler ✌
+Jon Waaler ✌
