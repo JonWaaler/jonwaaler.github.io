@@ -146,14 +146,14 @@ header button {
 }
 
 .aboutme div img {
-  height: 30vw;
+  height: 18vw;
   padding: 20px;
-  max-height: 350px;
 }
 
 .aboutme div p {
   color: var(--textColor2);
-  padding: 30px;
+  padding: 20px;
+  padding-right: 100px;
   height: 256px;
   font-size: 1rem;
 }
@@ -176,7 +176,7 @@ header button {
 }
 
 .container-projects {
-  display: flex;
+  display: none;
   align-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
@@ -243,14 +243,52 @@ header button {
   height: 650px;
 }
 
+/* HIDE/ENABLE Web Develop and Game Develop projects */
+.show-projects {
+  display: flex;
+}
+
+.project-selection {
+  align-items: center;
+  margin-left: 180px;
+}
+
+.project-selection h3 {
+  margin-left: 10px;
+  padding: 0px 10px;
+  max-width: 186px;
+  border-bottom: solid 2px #2d5dfc;
+  text-align: center;
+}
+
+.project-selection button {
+  border: 2px solid var(--background1-color);
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.project-selection button:hover {
+  color: var(--textColor1);
+  background-color: var(--background1-color);
+}
+.btn-active {
+  color: var(--textColor1);
+  background-color: var(--background1-color);
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (min-width: 981px) {
   .container-projects div:first-child img {
     width: 60vmax;
   }
 
+  .about-me-container div img {
+    padding-right: 5px;
+    width: auto;
+  }
+
   .aboutme div p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -314,20 +352,25 @@ header button {
     width: 70px;
     text-align: right;
     padding: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
     font-size: 1rem;
   }
 
   .aboutme div img {
-    height: 30vw;
-    padding: 5px;
+    height: 23vw;
   }
 
   .aboutme div p {
     color: var(--textColor2);
-    padding: 5px;
+    padding: 15px;
     height: 256px;
     font-size: 0.75rem;
+  }
+
+  /* MY WORK SELECTION */
+  .project-selection {
+    margin-top: 25px;
+    margin-left: 115px;
   }
 
   /*MY WORK*/
@@ -414,5 +457,13 @@ header button {
   .aboutme div h2 {
     padding: 10px 0px;
     padding-right: 10px;
+  }
+
+  .aboutme div p {
+    font-size: medium;
+  }
+
+  .aboutme div img {
+    display: none;
   }
 }
