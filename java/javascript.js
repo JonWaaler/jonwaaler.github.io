@@ -13,7 +13,7 @@ $(document).ready(function () {
     $("#show-websites").toggleClass("btn-active", !showGames);
   }
 
-  toggleMyWork(true);
+  toggleMyWork(false);
 
   $("#show-games").on("click", function () {
     console.log("GAMES");
